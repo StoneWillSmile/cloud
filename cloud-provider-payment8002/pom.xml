@@ -12,11 +12,11 @@
     <artifactId>cloud-provider-payment8002</artifactId>
 
     <dependencies>
-        <!-- 包含了sleuth zipkin 数据链路追踪-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; 包含了sleuth zipkin 数据链路追踪&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
+<!--        </dependency>-->
 
         <!--eureka client-->
         <dependency>
