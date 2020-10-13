@@ -1,8 +1,8 @@
 package org.wwh.cloud.config;
 
-import feign.Logger;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+        import feign.Logger;
+        import org.springframework.context.annotation.Bean;
+        import org.springframework.context.annotation.Configuration;
 
 /**
  * @author wwh

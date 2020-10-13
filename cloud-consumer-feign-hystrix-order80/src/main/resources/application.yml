@@ -1,0 +1,37 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeOut: 3000
+        readTimeOut: 3000
+
+# 特別注意
+hystrix:
+  command:
+    default:
+      execution:
+        #是否开始超时熔断，如果为false，则熔断机制只在服务不可用时开启（spring-cloud-starter-openfeign中的HystrixCommandProperties默认为true）
+        timeout:
+          enabled: true
+        #设置超时熔断时间（spring-cloud-starter-openfeign中的HystrixCommandProperties默认为1000毫秒）
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+#设置feign客户端超时时间(OpenFeign默认支持ribbon),找不到但会生效
+ribbon:
+  #指的是建立连接所用的时间，适用于网络状况正常的情况下,两端连接所用的时间
+  ReadTimeout: 5000
+  #指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 5000
