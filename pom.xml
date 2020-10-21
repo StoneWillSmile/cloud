@@ -22,6 +22,8 @@
         <module>cloud-consumer-feign-hystrix-order80</module>
         <module>cloud-consumer-hystrix-dashboard</module>
         <module>cloud-gateway-gateway9527</module>
+        <module>dubbo-test</module>
+        <module>cloud-config-center3344</module>
     </modules>
     <packaging>pom</packaging>
 
